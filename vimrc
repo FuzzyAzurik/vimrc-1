@@ -35,7 +35,7 @@ set hidden
 filetype indent on
 filetype plugin on
 set autoindent
-"set expandtab
+set expandtab
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,node_modules/*
 
 "allow deletion of previously entered data in insert mode
@@ -166,7 +166,7 @@ autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 autocmd vimenter * if !argc() | NERDTree | endif
 
 " Close if only NERDTree open
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Hides "Press ? for help"
 let NERDTreeMinimalUI=1
